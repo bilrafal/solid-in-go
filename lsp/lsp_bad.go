@@ -29,25 +29,25 @@ func (r *Rectangle) SetHeight(height int) {
 	r.height = height
 }
 
-type Square struct {
+type SquareBad struct {
 	Rectangle
 }
 
-func NewSquare(size int) *Square {
-	sq := Square{}
+func NewSquareBad(size int) *SquareBad {
+	sq := SquareBad{}
 	sq.width = size
 	sq.height = size
 	return &sq
 }
 
-func (s *Square) SetWidth(width int) {
+func (s *SquareBad) SetWidth(width int) {
 	s.width = width
 
 	//this is NOT OK
 	s.height = width
 }
 
-func (s *Square) SetHeight(height int) {
+func (s *SquareBad) SetHeight(height int) {
 	s.height = height
 
 	//this is NOT OK
@@ -68,12 +68,12 @@ func UseSizedBad() {
 	fmt.Print("UseSizedBad: Expected an area of rectangle:", expectedArea,
 		", got area: ", actualArea, "\n")
 
-	sq := NewSquare(5)
+	sq := NewSquareBad(5)
 	sized = sq
 
 	width = sized.GetWidth()
 	sized.SetHeight(10)
 	actualArea = sized.GetWidth() * sized.GetHeight()
-	fmt.Print("UseSizedBad: Expected an area of rectangle:", expectedArea,
+	fmt.Print("UseSizedBad: Expected an area of squareBad:", expectedArea,
 		", got area: ", actualArea, "\n")
 }
