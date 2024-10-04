@@ -19,5 +19,8 @@ whether attached to different structures or residing in different packages.
 * Closely related to <u>Specification (Enterprise pattern)</u>.
 
 
-### Liskov-Substitution-Principle (LSP)
+### Liskov-Substitution Principle (LSP)
 * if an API works with the base class it should also work with the derived class
+
+###  Interface-Segregation Principle (ISP)
+* you should NOT put too much into a single interface => break it up into various interfaces
