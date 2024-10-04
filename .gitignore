@@ -1,0 +1,12 @@
+# certs, keys, etc...
+*.csr
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Idea/Git/... and other api_tools
+.idea
+.git
+.run
+.run.xml
