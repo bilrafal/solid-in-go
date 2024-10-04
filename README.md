@@ -15,7 +15,9 @@ different concerns or different problems that the system solves have to reside i
 whether attached to different structures or residing in different packages.
 
 ### Open-Closed Principle (OCP)
+* Open for extension, closed for modification. 
+* Closely related to <u>Specification (Enterprise pattern)</u>.
 
-Open for extension, closed for modification.
 
-Closely related to <u>Specification (Enterprise pattern)</u>.
+### Liskov-Substitution-Principle (LSP)
+* if an API works with the base class it should also work with the derived class
