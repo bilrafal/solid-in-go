@@ -24,3 +24,7 @@ whether attached to different structures or residing in different packages.
 
 ###  Interface-Segregation Principle (ISP)
 * you should NOT put too much into a single interface => break it up into various interfaces
+
+###  Dependency-Inversion-Principle (DIP)
+* High Level Modules (HLM) should NOT depend on the Low Level Modules (LLM)
+* Both should depend on abstractions

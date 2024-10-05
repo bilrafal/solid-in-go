@@ -1,17 +1,20 @@
 package main
 
 import (
-	"design-patterns/solid-in-go/lsp"
-	"design-patterns/solid-in-go/ocp"
+	"design-patterns/solid-in-go/dip"
 )
 
 func main() {
 
 	// OCP
-	ocp.UseFilterBad()
-	ocp.UseFilterOK()
+	//ocp.UseFilterBad()
+	//ocp.UseFilterOK()
 
 	// LSP
-	lsp.UseSizedBad()
-	lsp.UseSizedOK()
+	//lsp.UseSizedBad()
+
+	// DIP
+	dip.UseBadInvestigate()
+	dip.UseInvestigate()
+
 }
